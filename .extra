@@ -1,0 +1,17 @@
+GIT_AUTHOR_NAME="Robbert Broersma"
+GIT_AUTHOR_EMAIL="mail@robbertbroersma.nl"
+
+GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
+GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
+
+git config --global user.name "$GIT_AUTHOR_NAME"
+git config --global user.email "$GIT_AUTHOR_EMAIL"
+git config --global user.signingkey "6790F9FC"
+git config --global pull.default rebase
+git config --global push.default simple
+
+git config --global alias.zip "rebase --committer-date-is-author-date"
+git config --global alias.past "log --graph --pretty=format:'%Cred%h%Creset %<(80)%s %<(20)%C(yellow)%d%Creset %Cgreen%an%Cblue committed %cr%Creset' --abbrev-commit"
+
+alias commit=git commit
+alias sub="open -a 'Sublime Text'"
