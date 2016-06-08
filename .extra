@@ -13,5 +13,6 @@ git config --global push.default simple
 git config --global alias.zip "rebase --committer-date-is-author-date"
 git config --global alias.past "log --graph --pretty=format:'%Cred%h%Creset %<(80)%s %<(20)%C(yellow)%d%Creset %Cgreen%an%Cblue committed %cr%Creset' --abbrev-commit"
 
-alias commit=git commit
+export HOMEBREW_NO_ANALYTICS=1
+
 alias sub="open -a 'Sublime Text'"
