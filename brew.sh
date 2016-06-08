@@ -94,6 +94,7 @@ brew install pigz
 brew install pv
 brew install rename
 brew install rhino
+brew install shellcheck
 brew install speedtest_cli
 brew install ssh-copy-id
 brew install testssl
